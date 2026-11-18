@@ -1,0 +1,9 @@
+{
+  "simulation_source": "experiments/results/simulation/analysis/held-out",
+  "live_source": "experiments/results/live-udp/audited.csv",
+  "scope": "Unmodified compact copies of saved analysis outputs. Raw packet logs and campaign builds are retained locally in experiments/results and excluded from the GitHub upload.",
+  "campaign_runs": 2310,
+  "tuning_runs": 450,
+  "live_trials": 24,
+  "warning": "runs.csv and analysis.json retain their original recorded raw-archive paths. Full raw archives are needed to reconstruct packet traces."
+}

@@ -1,0 +1,47 @@
+# Java build output
+/target/
+*.class
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# IDE and operating-system metadata
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+.aws/
+.codex/
+.agents/
+*.pem
+*.key
+
+# Office temporary files
+~$*
+*.tmp
+
+# Full local evidence and cleanup records
+/experiments/results/
+/experiments/maintenance/
+/experiments/protocol/*.tar.gz
+
+# Local packet captures and ad-hoc demo outputs
+*.pcap
+*.pcapng
+/sender.csv
+/receiver.csv
+/send-*.csv
+/receive-*.csv
+/wireshark-*.csv

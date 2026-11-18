@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "profileId": "phase-4-baselines",
+  "periodMs": 100,
+  "fixedBps": 1400000,
+  "initialBps": 1000000,
+  "minBps": 500000,
+  "maxBps": 2272000,
+  "minOutcomes": 10,
+  "highLossPermille": 50,
+  "lowLossPermille": 20,
+  "healthyDeliveryPermille": 750,
+  "freshMs": 750,
+  "staleMs": 850,
+  "staleSpacingMs": 500,
+  "congestionSpacingMs": 200,
+  "maxGrowthCreditMs": 500,
+  "additiveBpsPerSecond": 300000,
+  "aimdDecreasePermille": 750,
+  "stalePermille": 850
+}

@@ -1,0 +1,9 @@
+# Preserve exact bytes of frozen protocol and workload inputs.
+config/** -text
+experiments/protocol/** -text
+experiments/summary/** -text
+
+*.docx binary
+*.pptx binary
+*.pdf binary
+*.png binary

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "tune-variable",
+  "warmupMs": 10000,
+  "measureMs": 30000,
+  "drainMs": 2000,
+  "media": {
+    "frameIntervalMs": 20,
+    "deadlineMs": 150,
+    "basePackets": 2,
+    "enhancementPackets": 8,
+    "payloadBytesPerPacket": 500
+  },
+  "forward": {
+    "queueBytes": 16000,
+    "capacity": [
+      {
+        "atMs": 0,
+        "bps": 1650000
+      },
+      {
+        "atMs": 14000,
+        "bps": 1050000
+      },
+      {
+        "atMs": 22000,
+        "bps": 1550000
+      },
+      {
+        "atMs": 31000,
+        "bps": 1050000
+      }
+    ],
+    "delayMs": 30,
+    "jitterMs": 2,
+    "lossPpm": 0,
+    "burstEnterPpm": 0,
+    "burstExitPpm": 1000000,
+    "blackouts": [],
+    "extraDelay": []
+  },
+  "reverse": {
+    "queueBytes": 4000,
+    "capacity": [
+      {
+        "atMs": 0,
+        "bps": 256000
+      }
+    ],
+    "delayMs": 30,
+    "jitterMs": 1,
+    "lossPpm": 0,
+    "burstEnterPpm": 0,
+    "burstExitPpm": 1000000,
+    "blackouts": [],
+    "extraDelay": []
+  },
+  "background": []
+}

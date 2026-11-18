@@ -1,0 +1,21 @@
+{
+  "config/phase-6-freeze.json": "experiments/protocol/freeze.json",
+  "config/profiles/phase-4-baselines.json": "config/profiles/baselines.json",
+  "config/profiles/phase-5-candidate.json": "config/profiles/controller-candidate.json",
+  "config/profiles/phase-6-frozen.json": "config/profiles/frozen-study.json",
+  "scripts/phase-3-smoke.py": "scripts/udp-smoke.py",
+  "scripts/phase-6-run.py": "scripts/simulation-campaign.py",
+  "scripts/phase-6-timing": "scripts/component-timing",
+  "scripts/phase-7": "scripts/live-udp",
+  "reports/evaluations/phase-3-loopback.py": "experiments/verification/loopback.py",
+  "reports/evaluations/phase-4-simulator.py": "experiments/verification/simulator.py",
+  "reports/evaluations/phase-5-controller.py": "experiments/verification/controller.py",
+  "reports/evaluations/phase-6-audit.py": "experiments/verification/simulation-audit.py",
+  "reports/evaluations/phase-7-audit.py": "experiments/verification/live-audit.py",
+  "reports/evaluations/Phase5Fixture.java": "experiments/verification/ControllerFixture.java",
+  "reports/evaluations/Phase6Bootstrap.java": "experiments/verification/GateBootstrap.java",
+  "results/phase-6": "experiments/results/simulation",
+  "results/phase-7": "experiments/results/live-udp",
+  "results/fast-feedback": "experiments/results/fast-feedback",
+  "results/loopback": "experiments/results/loopback"
+}

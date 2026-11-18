@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "feedback-loss",
+  "warmupMs": 10000,
+  "measureMs": 30000,
+  "drainMs": 2000,
+  "media": {
+    "frameIntervalMs": 20,
+    "deadlineMs": 150,
+    "basePackets": 2,
+    "enhancementPackets": 8,
+    "payloadBytesPerPacket": 500
+  },
+  "forward": {
+    "queueBytes": 16000,
+    "capacity": [
+      {
+        "atMs": 0,
+        "bps": 1800000
+      }
+    ],
+    "delayMs": 30,
+    "jitterMs": 2,
+    "lossPpm": 0,
+    "burstEnterPpm": 0,
+    "burstExitPpm": 1000000,
+    "blackouts": [],
+    "extraDelay": []
+  },
+  "reverse": {
+    "queueBytes": 4000,
+    "capacity": [
+      {
+        "atMs": 0,
+        "bps": 256000
+      }
+    ],
+    "delayMs": 30,
+    "jitterMs": 1,
+    "lossPpm": 200000,
+    "burstEnterPpm": 0,
+    "burstExitPpm": 1000000,
+    "blackouts": [
+      {
+        "fromMs": 18000,
+        "untilMs": 20000
+      },
+      {
+        "fromMs": 29000,
+        "untilMs": 30000
+      }
+    ],
+    "extraDelay": []
+  },
+  "background": []
+}

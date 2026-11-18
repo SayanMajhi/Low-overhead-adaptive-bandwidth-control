@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "baseline-smoke",
+  "warmupMs": 400,
+  "measureMs": 1800,
+  "drainMs": 300,
+  "media": {
+    "frameIntervalMs": 20,
+    "deadlineMs": 150,
+    "basePackets": 2,
+    "enhancementPackets": 8,
+    "payloadBytesPerPacket": 500
+  },
+  "forward": {
+    "queueBytes": 3000,
+    "capacity": [
+      {
+        "atMs": 0,
+        "bps": 1800000
+      },
+      {
+        "atMs": 880,
+        "bps": 950000
+      }
+    ],
+    "delayMs": 30,
+    "jitterMs": 2,
+    "lossPpm": 0,
+    "burstEnterPpm": 0,
+    "burstExitPpm": 1000000,
+    "blackouts": [],
+    "extraDelay": []
+  },
+  "reverse": {
+    "queueBytes": 4000,
+    "capacity": [
+      {
+        "atMs": 0,
+        "bps": 256000
+      }
+    ],
+    "delayMs": 30,
+    "jitterMs": 1,
+    "lossPpm": 0,
+    "burstEnterPpm": 0,
+    "burstExitPpm": 1000000,
+    "blackouts": [
+      {
+        "fromMs": 1000,
+        "untilMs": 1500
+      }
+    ],
+    "extraDelay": []
+  },
+  "background": [
+    {
+      "fromMs": 880,
+      "untilMs": 1200,
+      "packetIpBytes": 1000,
+      "intervalMs": 21
+    }
+  ]
+}
